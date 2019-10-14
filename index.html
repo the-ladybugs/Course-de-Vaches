@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Course de Vaches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Course de Vaches Test</h4>
+    </header>
+    <aside>
+      <div class="commande">
+        <h3>Espace de Controle</h3>
+        <form action="">
+          <label for="credit">Credit restant : 1000pts</label><br>
+          <label for="depart">Montant de départ</label>
+          <input type="text">
+          <label for="choix">Vache Choisie</label>
+          <div>
+            <input type="radio"  name="choix" value="rouge"
+                   >
+            <label for="choix">Pimprenelle</label>
+          </div>
+          <div>
+            <input type="radio"  name="choix"
+            value="bleu"  >
+            <label for="choix">Marguerite</label>
+          </div>
+          <div>
+            <input type="radio"  name="choix"
+            value="jaune" >
+            <label for="choix">Pâquerette</label>
+          </div>
+          <div>
+            <input type="radio"  name="choix"
+            value="vert"   >
+            <label for="choix">Paulette</label>
+          </div>
+          <label for="dopant">Produit Dopant</label>
+          <div>
+            <input type="checkbox" id="dopant" name="epo"
+                   >
+            <label for="choix">EPO (-500 crédits)</label>
+          </div>
+          
+        </form>
+      </div>
+    </aside>
+    <div class="field">
+      <svg width="800" height="400">
+        <rect width="800" height="400" fill="#b3d335" id="rect"></rect>
+        <line x1="100" y1="0" x2="100" y2="400" stroke="#ffffff" stroke-width="2" stroke-dasharray="12"></line>
+        <line x1="105" y1="100" x2="700" y2="100" stroke="#ffffff" stroke-width="2" stroke-dasharray="12"></line>
+        <line x1="105" y1="200" x2="700" y2="200" stroke="#ffffff" stroke-width="2" stroke-dasharray="12"></line>
+        <line x1="105" y1="300" x2="700" y2="300" stroke="#ffffff" stroke-width="2" stroke-dasharray="12"></line>
+        <line x1="700" y1="0" x2="700" y2="400" stroke="#b40000" stroke-width="2" stroke-dasharray="12"></line>
+        <circle id="circle-pimprenelle" cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red"></circle>
+        <circle id="circle-marguerite" cx="50" cy="150" r="40" stroke="black" stroke-width="2" fill="blue"></circle>
+        <circle id="circle-paquerette" cx="50" cy="250" r="40" stroke="black" stroke-width="2" fill="orange"></circle>
+        <circle id="circle-paulette" cx="50" cy="350" r="40" stroke="black" stroke-width="2" fill="green"></circle>
+      </svg>
+    </div>
+    <footer>
+      <span>Ikram Gagaoua - 2019</span>
+    </footer>
+  </body>
+</html>
