@@ -1,25 +1,98 @@
 body {
   margin: 0;
+  background-image: url(/images/grass.jpg);
 }
-
+h1,
+h2,
+h3 {
+  font-family: "Grand Hotel", cursive;
+}
+h1 {
+  font-size: 75px;
+}
 header {
-  height: 100px;
   width: 100%;
-  background-color: darkgray;
   text-align: center;
+}
+.flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.running_cow {
+  width: 200px;
+  height: auto;
 }
 header h2 {
   padding: 30px;
 }
 footer {
-  height: 100px;
-  background-color: black;
   color: white;
+  font-size: 18px;
   text-align: center;
+  background-color: darkgreen;
+  padding: 5px;
 }
-div.commande {
-  background-color: grey;
-  width: 300px;
-  margin-left: 75px;
-  height: auto;
+aside.commande {
+  background-color: lightgrey;
+  height: 400px;
+  padding: 0px 60px;
+}
+.flex-container {
+  display: flex;
+  padding: 10px 10px 60px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Label properties */
+aside.commande h3 {
+  text-align: center;
+  font-size: 25px;
+}
+input {
+  margin: 10px;
+}
+label[for="bet"] {
+  padding-right: 10px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+label[for="pimprenelle"] {
+  color: red;
+}
+
+label[for="marguerite"] {
+  color: blue;
+}
+
+label[for="paquerette"] {
+  color: orange;
+}
+
+label[for="paulette"] {
+  color: green;
+}
+
+label[for="epo"] {
+  color: grey;
+}
+
+/* For displaying messages */
+#message {
+  font-family: "LoverLetters";
+  font-weight: bold;
+  position: absolute;
+  width: 500px;
+  top: 250px;
+  left: 50%;
+  margin-left: -240px;
+  text-align: center;
+  font-size: 4.3em;
+  color: brown;
 }
