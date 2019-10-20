@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Grand+Hotel&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.svg.css" />
+    <script type="text/javascript" src="jquery.svg.js"></script>
+    <script type="text/javascript" src="jquery.svganim.js"></script>
     <title>Course de Vaches</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -40,40 +44,51 @@
 
           <div>
             <div>
-              <input type="radio" name="cow" id="pimprenelle" checked /><label
-                for="pimprenelle"
-                >Pimprenelle</label
-              >
+              <input
+                type="radio"
+                name="cow"
+                id="pimprenelle"
+                checked
+                value="red"
+              /><label for="pimprenelle">Pimprenelle</label>
             </div>
             <div>
-              <input type="radio" name="cow" id="marguerite" /><label
-                for="marguerite"
-                >Marguerite</label
-              >
+              <input
+                type="radio"
+                name="cow"
+                id="marguerite"
+                value="blue"
+              /><label for="marguerite">Marguerite</label>
             </div>
             <div>
-              <input type="radio" name="cow" id="paquerette" /><label
-                for="paquerette"
-                >Pâquerette</label
-              >
+              <input
+                type="radio"
+                name="cow"
+                id="paquerette"
+                value="yellow"
+              /><label for="paquerette">Pâquerette</label>
             </div>
             <div>
-              <input type="radio" name="cow" id="paulette" /><label
-                for="paulette"
-                >Paulette</label
-              >
+              <input
+                type="radio"
+                name="cow"
+                id="paulette"
+                value="green"
+              /><label for="paulette">Paulette</label>
             </div>
           </div>
 
           <div>Produit dopant (optionnel)</div>
 
-          <div>
+          <div id="box">
             <input type="checkbox" id="epo" disabled /><label for="epo"
               >EPO (-500 crédits)</label
             >
           </div>
 
-          <div><input type="button" id="start" value="Parier" /></div>
+          <div>
+            <input type="button" id="launch" value="Parier" onClick="start()" />
+          </div>
         </form>
       </aside>
       <div class="piste">
@@ -157,4 +172,6 @@
       <span>Ikram Gagaoua - 2019</span>
     </footer>
   </body>
+
+  <script type="text/javascript" src="script.js"></script>
 </html>
