@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="counter flex-container" id="counter"><h1 id="count">3</h1></div>
     <header class="flex-header">
       <img
         class="running_cow"
@@ -32,64 +33,68 @@
     <div class="flex-container">
       <aside class="commande">
         <h3>Espace de Controle</h3>
-        <form action="">
-          <div>Crédits : <span id="credits"></span></div>
 
+        <div>
+          Crédits :
+          <span id="credits"></span>
+        </div>
+
+        <div>
+          <label for="bet">Montant</label
+          ><input
+            type="number"
+            id="bet"
+            value="100"
+            onchange="update_bet(this.value)"
+          />
+        </div>
+
+        <div>Choisissez une vache :</div>
+
+        <div>
           <div>
-            <label for="bet">Montant</label
-            ><input type="number" id="bet" value="100" />
+            <input
+              type="radio"
+              name="cow"
+              id="pimprenelle"
+              checked
+              value="red"
+            /><label for="pimprenelle">Pimprenelle</label>
           </div>
-
-          <div>Choisissez une vache :</div>
-
           <div>
-            <div>
-              <input
-                type="radio"
-                name="cow"
-                id="pimprenelle"
-                checked
-                value="red"
-              /><label for="pimprenelle">Pimprenelle</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="cow"
-                id="marguerite"
-                value="blue"
-              /><label for="marguerite">Marguerite</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="cow"
-                id="paquerette"
-                value="yellow"
-              /><label for="paquerette">Pâquerette</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="cow"
-                id="paulette"
-                value="green"
-              /><label for="paulette">Paulette</label>
-            </div>
-          </div>
-
-          <div>Produit dopant (optionnel)</div>
-
-          <div id="box">
-            <input type="checkbox" id="epo" disabled /><label for="epo"
-              >EPO (-500 crédits)</label
+            <input type="radio" name="cow" id="marguerite" value="blue" /><label
+              for="marguerite"
+              >Marguerite</label
             >
           </div>
-
           <div>
-            <input type="button" id="launch" value="Parier" onClick="start()" />
+            <input
+              type="radio"
+              name="cow"
+              id="paquerette"
+              value="yellow"
+            /><label for="paquerette">Pâquerette</label>
           </div>
-        </form>
+          <div>
+            <input type="radio" name="cow" id="paulette" value="green" /><label
+              for="paulette"
+              >Paulette</label
+            >
+          </div>
+        </div>
+
+        <div>Produit dopant (optionnel)</div>
+
+        <div id="box">
+          <input type="checkbox" id="epo" disabled /><label for="epo"
+            >EPO (-500 crédits)</label
+          >
+        </div>
+
+        <div>
+          <input type="button" id="launch" value="Parier" onClick="start()" />
+          <span id="zeroscore"></span>
+        </div>
       </aside>
       <div class="piste">
         <svg height="400" width="750">
