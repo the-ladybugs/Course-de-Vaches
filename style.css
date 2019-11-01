@@ -38,6 +38,7 @@ aside.commande {
   background-color: KHAKI;
   height: 400px;
   padding: 0px 60px;
+  width: 300px;
 }
 .flex-container {
   display: flex;
